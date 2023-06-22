@@ -7,12 +7,16 @@ eureka:
   instance:
     hostname: discovery-service-0.discovery-service
 
-# microservice:
-#   incident-service:
-#     endpoints:
-#       endpoint:
-#         uri: http://incident-service/**
-#   authentication-service:
-#     endpoints:
-#       endpoint:
-#         uri: http://authentication-service/**
+microservice:
+  notification-service:
+    endpoints:
+      endpoint:
+        uri: http://notification-service/ws-message
+  incident-service:
+    endpoints:
+      endpoint:
+        uri: http://incident-service/**
+  authentication-service:
+    endpoints:
+      endpoint:
+        uri: http://authentication-service/**
