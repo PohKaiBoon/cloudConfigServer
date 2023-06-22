@@ -3,11 +3,25 @@ eureka:
     register-with-eureka: true
     fetch-registry: true
     service-url:
-      # defaultZone: http://discovery-service-0.discovery-service:8761/eureka
-      defaultZone: http://localhost:8761/eureka
+      defaultZone: http://discovery-service-0.discovery-service:8761/eureka
+      # defaultZone: http://localhost:8761/eureka
+      instance:
+    hostname: host.minikube.internal
 
 microservice:
   notification-service:
     endpoints:
       endpoint:
         uri: http://notification-service/ws-message
+
+
+
+# microservice:
+#   incident-service:
+#     endpoints:
+#       endpoint:
+#         uri: http://incident-service/incident/test
+#   authentication-service:
+#     endpoints:
+#       endpoint:
+#         uri: http://authentication-service/auth/test
