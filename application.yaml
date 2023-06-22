@@ -3,9 +3,9 @@ eureka:
     register-with-eureka: true
     fetch-registry: true
     service-url:
-      defaultZone: http://discovery-service:8761/eureka/
+      defaultZone: http://discovery-service-0.discovery-service:8761/eureka
   instance:
-    hostname: discovery-service
+    hostname: discovery-service-0.discovery-service
 
 # microservice:
 #   incident-service:
