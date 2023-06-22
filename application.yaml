@@ -11,12 +11,4 @@ microservice:
   notification-service:
     endpoints:
       endpoint:
-        uri: http://notification-service/ws-message
-  incident-service:
-    endpoints:
-      endpoint:
-        uri: http://incident-service/**
-  authentication-service:
-    endpoints:
-      endpoint:
-        uri: http://authentication-service/**
+        uri: http://notification-service/
