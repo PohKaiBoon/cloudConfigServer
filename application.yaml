@@ -11,4 +11,4 @@ microservice:
   notification-service:
     endpoints:
       endpoint:
-        uri: http://notification-service/
+        uri: http://notification-service:8084/ws-message
