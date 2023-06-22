@@ -9,15 +9,15 @@ microservice:
   incident-service:
     endpoints:
       endpoint:
-        uri: http://incident-service/incident/test
+        uri: http://incident-service
   authentication-service:
     endpoints:
       endpoint:
-        uri: http://authentication-service/auth/test
+        uri: http://authentication-service
   notification-service:
     endpoints:
       endpoint:
-        uri: http://notification-service/ws-message
+        uri: http://notification-service
 
 
 # eureka:
